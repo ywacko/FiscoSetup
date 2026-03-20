@@ -43,6 +43,8 @@ docker compose version || docker-compose --version
 - 有些 Ubuntu 默认仓库没有 `docker-compose-plugin`
 - 这时改装 `docker-compose-v2` 或 `docker-compose` 都可以
 - 当前脚本已经同时兼容 `docker compose` 和 `docker-compose`
+- 当前建链步骤固定在 `fisco-bcos-air-gm:3.0` 容器内执行，宿主机只需要能正常运行 Docker
+- 当前固定直接使用随包下发的 `tassl-1.1.1b` 挂载进容器，不再依赖宿主机本地的 `~/.fisco`
 
 如果当前用户没有 Docker 权限，执行：
 
@@ -124,8 +126,8 @@ bash setup_fisco_docker_4node.sh /data/fisco-air-gm-3.0
 
 - 创建工作目录
 - 优先使用随包下发的 `build_chain.sh`
-- 如果当前用户目录下没有 `~/.fisco/tassl-1.1.1b`，优先使用随包下发的 `tassl-1.1.1b`
-- 从镜像中提取 `fisco-bcos`
+- 直接使用随包下发的 `tassl-1.1.1b`，挂载进容器内执行
+- 固定在 `fisco-bcos-air-gm:3.0` 容器内执行 `build_chain.sh`
 - 生成 4 节点国密链目录
 - 把 `min_seal_time` 改成 `2000`
 - 把 `block_tx_count_limit` 改成 `4000`
