@@ -17,7 +17,7 @@
 
 ## 1. 交付物
 
-把下面 9 个文件整体交给对方：
+把下面 8 个文件整体交给对方：
 
 - `setup_fisco_docker_4node.sh`
 - `start_fisco_docker_4node.sh`
