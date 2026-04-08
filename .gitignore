@@ -1,11 +1,15 @@
-air-3.0.0/build_chain.sh
-air-3.0.0/fisco-air-gm-repro-3.0.tar
-air-3.0.0/setup_fisco_docker_4node.sh
-air-3.0.0/start_fisco_docker_4node.sh
-air-3.0.0/status_fisco_docker_4node.sh
-air-3.0.0/stop_fisco_docker_4node.sh
-air-3.0.0/tassl-1.1.1b
+air-3.0.0/*
+!air-3.0.0/fisco-docker-setup-instruction.md
+!air-3.0.0/fisco-air-setup-files.rar
 
 air-3.7.3/*
 !air-3.7.3/fisco-docker-setup-instruction.md
 !air-3.7.3/fisco-air-3.7.3-setup-files.rar
+
+max/*
+!max/fisco-docker-setup-instruction.md
+!max/fisco-max-setup-files.rar
+
+pro/*
+!pro/fisco-docker-setup-instruction.md
+!pro/fisco-pro-setup-files.rar
