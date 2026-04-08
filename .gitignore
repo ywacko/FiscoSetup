@@ -13,3 +13,7 @@ max/*
 pro/*
 !pro/fisco-docker-setup-instruction.md
 !pro/fisco-pro-setup-files.rar
+
+/.idea/
+/*.iml
+/.vscode/
